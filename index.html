@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fibonacho</title>
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Baloo+2:400,700|Caveat:400,700&display=swap" rel="stylesheet">        
+        <link href="css/styles.css" rel="stylesheet">
+    </head>
+    <body>
+       
+        <!--=======Header=======-->
+        <header class="main-header">
+            <div class="container flex-container">
+                <div class="flex-container logo-title">
+                    <img class="site-logo" src="img/fibonacho.png" alt="">
+                    <div class="site-title">fibonacho</div>
+                </div>
+                <nav>
+                    <ul class="main-nav flex-container">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#site-courses">Cursos</a></li>
+                        <li><a href="#site-about">Quien soy</a></li>
+                        <li><a href="#site-contact">Contacto</a></li>
+                        <li><a href="./html/notas/plataforma-notas.html">Tus Notas</a></li>
+                        <li><a data-btn="btn--login-open" class="btn-user-login"><i class="fas fa-user"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div data-form="form--login-window" class="login-admin login-hidden">
+            <div class="login-background"></div>
+            <div class="login-window">
+                <h2 class="login-title">Login</h2>
+                <p data-btn="btn--login-close" class="login-close"><i class="fas fa-times"></i></p>
+                <form>
+                    <input data-input="input--login-username" class="input-login" type="text" aria-label="nombre de usuario" placeholder="nombre de usuario">
+                    <input data-input="input--login-password" class="input-login" type="password" aria-label="contraseña" placeholder="contraseña">
+                    <button data-btn="btn--login-submit" class="input-login input-btn">enviar</button>
+                </form>
+                <p data-message="message--no-username" class="login-error-message login-error-message-hidden">Escribe tu nombre de usuario.</p>
+                <p data-message="message--no-password" class="login-error-message login-error-message-hidden">Escribe tu contraseña.</p>
+                <p data-message="message--login-data-incorrect" class="login-error-message login-error-message-hidden">Lo sentimos, usuario o contraseña incorrecto.</p>
+            </div>
+        </div>
+        
+        <main>
+            <!--=======Hero Section=======-->
+            <section class="site-hero-complete shadow-home">
+                <div class="site-hero container">
+                    <h1 class="site-hero__title">¡Aprende matematicas!</h1>
+                    <h2 class="site-hero__subtitle">En linea y desde la casa.</h2>
+                    <img class="site-hero__image" src="img/pen.png" alt="">
+                </div>
+            </section>
+
+            <!--=======Course Section=======-->
+            <section class="site-courses flex-container" id="site-courses">
+                <div class="container courses-container">
+                    <div class="courses-title site-hero__title">Elige tu curso ya.</div>
+                    <div class="flex-container courses-flex">
+
+                        <!--=======Course: Grado 01=======-->
+                        <div class="site-courses__item">
+                            <div class="site-courses-courses__box">
+                                <a href="html/grado-1/grado-1.html"><div class="site-courses__icon"><i class="fas fa-paw"></i></div></a>
+                            </div>
+                            <p class="site-courses__subtitle">Grado 1</p>
+                        </div>
+    
+                        <!--=======Course: Grado 02=======-->
+                        <div class="site-courses__item">
+                            <div class="site-courses-courses__box ">
+                                <a href="html/grado-2/grado-2.html"><div class="site-courses__icon"><i class="fas fa-horse-head"></i></div></a>
+                            </div>
+                            <p class="site-courses__subtitle">Grado 2</p>
+                        </div>
+    
+                        <!--=======Course: Grado 03=======-->
+                        <div class="site-courses__item">
+                            <div class="site-courses-courses__box">
+                                <a href="html/grado-3/grado-3.html"><div class="site-courses__icon"><i class="fas fa-dove"></i></div></a>
+                            </div>
+                            <p class="site-courses__subtitle">Grado 3</p>
+                        </div>
+    
+                        <!--=======Course: Grado 04=======-->
+                        <div class="site-courses__item">
+                            <div class="site-courses-courses__box">
+                                <a href="html/grado-4/grado-4.html"><div class="site-courses__icon"><i class="fas fa-cat"></i></div></a>
+                            </div>
+                            <p class="site-courses__subtitle">Grado 4/5</p>
+                        </div>
+    
+                    </div>
+                </div>
+                
+            </section>
+
+            <section class="shadow-home" id="site-about">
+                <div class="flex-container container site-about">
+                    <p class="site-about__text">Mi nombre es <b>Mónica Marín Arbeláez</b>, soy una persona que está fascinada e impresionada 
+                        con el mágico mundo de los números y lo que hago es enseñar lo que he descubierto de este mundo a niños de primaria. 
+                        Digo lo que he descubierto ya que cada persona cada vez que aprende algo lo descubre para sí misma y lo hace propio. 
+                        <br>Hemos creado <b>Fibonacho</b> con la esperanza de acercar algunos temas del área a 
+                        nuestros estudiantes y demás personas que deseen explorar la página, extendiendo nuestro acompañamiento fuera del aula. </p>
+                    <img class="site-about__image" src="img/hand.png" alt="">
+                </div>
+            </section>
+
+            <section class="site-contact" id="site-contact">
+                <div class="container">
+                    <div class="contact-container flex-container">
+                        <div class="site-contact__icon"><i class="far fa-envelope"></i></div>
+                        <p class="site-contact__text">Si quieres escribirnos para darnos sugerencias, solicitar material, recomendarnos algún tema
+                             de tu interés o compartirnos material de trabajo puedes contactarnos a través de nuestro correo electrónico: <span>fibonacho.edu@gmail.com</span>
+                             <br><br>Y si te gusta y te sirve lo que hacemos puedes seguirnos a través de <a href="https://www.youtube.com/channel/UCYh1GA3F5H7cXvqqwMAG71g/featured" target="_blank">nuestro canal en youtube</a>.                      
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        
+        <footer class="site-footer">
+            <!--<div class="flex-container logo-title">
+                <img class="site-logo" src="img/fibonacho.png" alt="">
+                <div class="site-title">fibonacho</div>
+            </div>-->
+            <img class="footer-logo" src="img/fibonacho.png" alt="">
+            <div class="footer-title">fibonacho</div>
+            <p class="copyright">Copyright 2020</p>
+            <p>• • •</p>
+            <p><a class="resources" href='https://pngtree.com/so/background'>Background png from pngtree.com</a></p>
+        </footer>
+
+        
+        <script src="script/index-login.js"></script>
+    </body>
+
+</html>
